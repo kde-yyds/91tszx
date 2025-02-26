@@ -1,0 +1,36 @@
+{
+  "name": "91tszx",
+  "productName": "91tszx",
+  "version": "1.0.0",
+  "description": "91tszx",
+  "main": "src/index-stu.js",
+  "config": {},
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "package32": "electron-forge package --arch=ia32",
+    "make": "electron-forge make",
+    "make32": "electron-forge make --arch ia32",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Chivox",
+    "email": "kefu@chivox.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "electron-rebuild": "^3.2.9",
+    "electron-squirrel-startup": "^1.0.0",
+    "yarn": "^1.22.18"
+  }
+}

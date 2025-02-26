@@ -1,0 +1,72 @@
+{
+  "name": "91ustudy",
+  "productName": "91ustudy",
+  "version": "1.0.0",
+  "description": "91ustudy",
+  "main": "src/index-shxtea.js",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "shxtea.ico",
+        "download": {
+          "mirrorOptions": {
+            "mirror": "https://npm.taobao.org/mirrors/electron/"
+          }
+        }
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "iconUrl": "D:/ele/shxtea.ico",
+            "setupExe": "善学教师客户端.exe",
+            "setupIcon": "shxtea.ico",
+            "loadingGif": "startup.gif"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "make32": "electron-forge make --arch ia32",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Chivox",
+    "email": "kefu@chivox.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "electron-rebuild": "^3.2.9",
+    "electron-squirrel-startup": "^1.0.0",
+    "opencv4nodejs": "^5.6.0",
+    "yarn": "^1.22.18"
+  }
+}
